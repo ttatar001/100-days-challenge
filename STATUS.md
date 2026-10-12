@@ -30,7 +30,7 @@
 
 ## Najbliższy krok
 
-W prywatnym Google Sheets zapisano roboczy cel oraz szczegółową propozycję FBW, spokojnego biegania i cardio na bieżący tydzień. Plan skorygowano według doprecyzowanego kontekstu użytkownika; uwzględniono regenerację po meczu także na początku kolejnego tygodnia. Aktualne ustalenia znajdują się w prywatnych notatkach arkusza. Przed zmianą utworzono kopię; plan i notatki sprawdzono przez odczyt API. Wykonanie i reakcja użytkownika pozostają do raportowania. Szczegóły osobowe i pomiary pozostają poza repozytorium. Następnie uzupełnij profil potrzebny do oszacowania zapotrzebowania i zbierz zamówione pudełka oraz opisy NTFY, aby ułożyć jedzenie na tydzień. Odczytowy importer Garmina według `scripts/README.md` jest późniejszym etapem.
+W prywatnym Google Sheets zapisano roboczy cel oraz szczegółową propozycję FBW, spokojnego biegania i cardio na bieżący tydzień. Plan skorygowano według doprecyzowanego kontekstu użytkownika; uwzględniono regenerację po meczu także na początku kolejnego tygodnia. Aktualne ustalenia znajdują się w prywatnych notatkach arkusza. Przed zmianą utworzono kopię; plan i notatki sprawdzono przez odczyt API. Wykonanie i reakcja użytkownika pozostają do raportowania. Szczegóły osobowe i pomiary pozostają poza repozytorium. Podstawowy profil i preferencje posiłków zapisano w prywatnym arkuszu wraz ze wstępnymi obliczeniami. Nadal brakuje odpowiedzi o ograniczeniach żywieniowych i celu kontroli cukrów. Użytkownik prześle opisy pudełek NTFY osobno; po ich otrzymaniu dobierz kalorie, porcje i godziny jedzenia na tydzień. Dane odżywki i kefiru uzupełnij z etykiet. Odczytowy importer Garmina według `scripts/README.md` jest późniejszym etapem.
 
 ## Niewdrożone
 
