@@ -2,16 +2,16 @@
 
 ## Zacznij tutaj
 
-Pracuj po polsku. Przy pierwszym zadaniu przeczytaj `STATUS.md`, `RULES.md` oraz pliki w `inputs/`, które użytkownik udostępnił. Źródłem planu i pomiarów jest `data/Wyzwanie_100_DNI_draft.xlsx`. `README.md` opisuje uruchomienie projektu.
+Pracuj po polsku. Przy pierwszym zadaniu przeczytaj `STATUS.md`, `RULES.md` oraz pliki w `inputs/`, które użytkownik udostępnił. Źródłem planu i pomiarów jest prywatny arkusz Google Sheets „100 days challenge”. Odnajdź go przez wyszukiwanie w połączonej wtyczce Google Drive, odczytaj metadane i potwierdź dwie zakładki: „Plan i dziennik” i „Posiłki”. Pomiń pliki z dopiskiem „kopia importu”. Jeśli jest więcej niż jeden pasujący arkusz, poproś użytkownika o wskazanie właściwego. Prywatnego URL ani identyfikatora nie zapisuj w publicznym repozytorium. Plik `data/Wyzwanie_100_DNI_draft.xlsx` pozostaje archiwalnym draftem, nie bieżącym źródłem danych. `README.md` opisuje uruchomienie projektu.
 
 Pomagaj prowadzić redukcję przez 100 dni z zachowaniem sprawności i świeżości potrzebnej sędziemu piłkarskiemu. Nie zakładaj parametrów ciała, daty startu, docelowych kalorii ani możliwości treningowych, zanim użytkownik ich nie poda. Rozróżniaj ustalone zasady, propozycje, pomiary i brak danych.
 
 ## Zakres działań
 
 - Możesz samodzielnie czytać i edytować pliki tego projektu, przygotowywać tygodniowe plany, liczyć dane oraz tworzyć potrzebne skrypty. Przy prostych poprawkach wykonuj najkrótszy potrzebny zakres pracy.
-- Użytkownik nie zgadza się na możliwość usuwania jego plików na Google Drive. Projekt ma działać bez integracji z Google Drive. Nie podłączaj tego dodatku, nie proś o szerokie uprawnienia do Dysku i nie korzystaj z ewentualnej istniejącej integracji. Wariantem wymiany danych jest ręczny eksport lub import wykonywany przez użytkownika.
-- Nie usuwaj oryginalnych danych, pomiarów ani poprzednich tygodni. Przed edycją arkusza zapisz kopię w `backups/` z datą i godziną. Nowe raporty zapisuj w `exports/`.
-- Nie publikuj danych zdrowotnych ani projektu w zewnętrznym repozytorium. Nie zapisuj haseł, tokenów ani kluczy w arkuszu, raportach lub plikach instrukcji. Logowanie do Garmina ma odbywać się lokalnie.
+- Użytkownik zatwierdził używanie połączonej wtyczki Google Drive do odczytu i aktualizacji wskazanego arkusza Google Sheets oraz tworzenia jego kopii zapasowych i eksportów. Nie usuwaj plików z Google Drive ani nie zmieniaj ich udostępniania. Nie rozszerzaj działań na inne pliki bez zlecenia.
+- Nie usuwaj oryginalnych danych, pomiarów ani poprzednich tygodni. Przed edycją arkusza utwórz na Google Drive kopię zapasową z datą i godziną Europe/Warsaw. Zwykły odczyt nie wymaga kopii. Przed zapisem odczytaj metadane, dokładne zakładki i docelowe zakresy wraz z formułami oraz walidacją; po zapisie odczytaj zmienione komórki i sprawdź obliczenia. Nie nadpisuj nowszych danych arkusza archiwalnym XLSX.
+- Repozytorium GitHub przechowuje instrukcje i kod projektu. Nie publikuj w nim danych zdrowotnych, pomiarów ani eksportów zawierających dane osobowe; bieżące dane pozostają w prywatnym arkuszu Google Sheets. Nie zapisuj haseł, tokenów ani kluczy w arkuszu, raportach lub plikach instrukcji. Logowanie do Garmina ma odbywać się lokalnie.
 - Integracja Garmin jest zaakceptowanym kierunkiem rozwoju. Najpierw zbuduj importer danych odczytowych przez `python-garminconnect`; nie dodawaj operacji zmieniających lub usuwających dane konta. Awaryjnie obsłuż eksport Garmin Connect.
 - NTFY wprowadzamy ręcznie z opisów lub zrzutów ekranu. Scraper pozostaje późniejszym etapem.
 
