@@ -30,7 +30,7 @@
 
 ## Najbliższy krok
 
-Rozpoczęto planowanie tygodnia. Potwierdzone ustalenia i informacje użytkownika zapisano w prywatnym Google Sheets po utworzeniu kopii zapasowej. Plan treningów i jedzenia pozostaje do ustalenia. Najpierw uzupełnij dane potrzebne do doboru obciążeń; następnie profil, zamówione pudełka i opis dania NTFY. Szczegóły osobowe pozostają w prywatnym arkuszu. Odczytowy importer Garmina według `scripts/README.md` jest późniejszym etapem.
+Rozpoczęto planowanie tygodnia. Potwierdzone ustalenia i informacje użytkownika zapisano w prywatnym Google Sheets po utworzeniu kopii zapasowej. Zapisano roboczą propozycję planu aktywności w prywatnym arkuszu; wymaga bieżącej weryfikacji z użytkownikiem. Szczegóły i informacje osobowe pozostają w arkuszu. Następnie zbierz profil, zamówione pudełka i opis dania NTFY, aby przygotować plan jedzenia. Szczegóły osobowe pozostają w prywatnym arkuszu. Odczytowy importer Garmina według `scripts/README.md` jest późniejszym etapem.
 
 ## Niewdrożone
 
