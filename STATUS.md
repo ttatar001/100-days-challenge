@@ -30,7 +30,7 @@
 
 ## Najbliższy krok
 
-W prywatnym Google Sheets zapisano roboczy cel oraz szczegółową propozycję treningów siłowych i cardio na bieżący tydzień. Przed zmianą utworzono kopię; plan i notatki sprawdzono przez odczyt API. Wykonanie i reakcja użytkownika pozostają do raportowania. Szczegóły osobowe i pomiary pozostają poza repozytorium. Następnie uzupełnij profil potrzebny do oszacowania zapotrzebowania i zbierz zamówione pudełka oraz opisy NTFY, aby ułożyć jedzenie na tydzień. Odczytowy importer Garmina według `scripts/README.md` jest późniejszym etapem.
+W prywatnym Google Sheets zapisano roboczy cel oraz szczegółową propozycję FBW, spokojnego biegania i cardio na bieżący tydzień. Plan skorygowano według doprecyzowanego kontekstu użytkownika; uwzględniono regenerację po meczu także na początku kolejnego tygodnia. Aktualne ustalenia znajdują się w prywatnych notatkach arkusza. Przed zmianą utworzono kopię; plan i notatki sprawdzono przez odczyt API. Wykonanie i reakcja użytkownika pozostają do raportowania. Szczegóły osobowe i pomiary pozostają poza repozytorium. Następnie uzupełnij profil potrzebny do oszacowania zapotrzebowania i zbierz zamówione pudełka oraz opisy NTFY, aby ułożyć jedzenie na tydzień. Odczytowy importer Garmina według `scripts/README.md` jest późniejszym etapem.
 
 ## Niewdrożone
 
