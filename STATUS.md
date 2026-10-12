@@ -30,7 +30,7 @@
 
 ## Najbliższy krok
 
-Zbierz profil użytkownika i przykład opisu dania NTFY. Uzgodnij potrzebne kolumny przed dalszą rozbudową arkusza. Następnie przygotuj odczytowy importer Garmina według `scripts/README.md` i pierwszy realny plan po otrzymaniu danych.
+Rozpoczęto planowanie tygodnia. Potwierdzone ustalenia i informacje użytkownika zapisano w prywatnym Google Sheets po utworzeniu kopii zapasowej. Plan treningów i jedzenia pozostaje do ustalenia. Najpierw uzupełnij dane potrzebne do doboru obciążeń; następnie profil, zamówione pudełka i opis dania NTFY. Szczegóły osobowe pozostają w prywatnym arkuszu. Odczytowy importer Garmina według `scripts/README.md` jest późniejszym etapem.
 
 ## Niewdrożone
 
