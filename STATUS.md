@@ -2,7 +2,7 @@
 
 ## Cel
 
-100 dni redukcji masy z utrzymaniem zdrowego odżywiania i treningów dostosowanych do pracy sędziego piłkarskiego. Data startu i liczbowy cel nie zostały jeszcze ustalone.
+100 dni redukcji masy z utrzymaniem zdrowego odżywiania i treningów dostosowanych do pracy sędziego piłkarskiego. Data startu i roboczy cel liczbowy są zapisane w prywatnym arkuszu; wymagają weryfikacji wraz z profilem i rzeczywistymi pomiarami.
 
 ## Gotowe
 
@@ -30,7 +30,7 @@
 
 ## Najbliższy krok
 
-Rozpoczęto planowanie tygodnia. Potwierdzone ustalenia i informacje użytkownika zapisano w prywatnym Google Sheets po utworzeniu kopii zapasowej. Zapisano roboczą propozycję planu aktywności w prywatnym arkuszu; wymaga bieżącej weryfikacji z użytkownikiem. Szczegóły i informacje osobowe pozostają w arkuszu. Następnie zbierz profil, zamówione pudełka i opis dania NTFY, aby przygotować plan jedzenia. Szczegóły osobowe pozostają w prywatnym arkuszu. Odczytowy importer Garmina według `scripts/README.md` jest późniejszym etapem.
+Rozpoczęto planowanie tygodnia. Potwierdzone ustalenia i informacje użytkownika zapisano w prywatnym Google Sheets po utworzeniu kopii zapasowej. Zapisano i skorygowano roboczą propozycję planu aktywności w prywatnym arkuszu, uwzględniając siłownię i ograniczenia dostępności. Szczegóły cardio i ćwiczeń wymagają jeszcze odpowiedzi użytkownika. Roboczy cel liczbowy zapisano w arkuszu z rozróżnieniem założeń i pomiarów. Szczegóły i informacje osobowe pozostają w arkuszu. Następnie zbierz profil, zamówione pudełka i opis dania NTFY, aby przygotować plan jedzenia. Szczegóły osobowe pozostają w prywatnym arkuszu. Odczytowy importer Garmina według `scripts/README.md` jest późniejszym etapem.
 
 ## Niewdrożone
 
