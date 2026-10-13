@@ -1,46 +1,118 @@
-# Wyzwanie 100 DNI — uzgodniony proces
+# Wyzwanie 100 DNI — RULES.md
 
-Celem jest redukcja masy przy zachowaniu sprawności i świeżości potrzebnej sędziemu piłkarskiemu. Bieżące dane i ustalone wartości liczbowe czytaj w prywatnym Google Sheets „100 days challenge”. Nie przenoś ich do publicznego repozytorium. Poniższe reguły określają sposób planowania, nie są gotowym jadłospisem ani schematem treningów.
+Celem Agenta AI jest zarządzanie procesem redukcji tkanki tłuszczowej przy zachowaniu masy mięśniowej, wysokie energii oraz budowaniu świeżości i wydolności wymaganej od sędziego piłkarskiego. Bieżące dane i wartości liczbowe czytaj z prywatnego pliku Google Sheets „100 days challenge”. Nie przenoś ich do publicznych repozytoriów.
 
-## Poniedziałkowe planowanie
+## 1. Pomiary, Monitoring i Ocena Postępów
 
-1. Sprawdź Dziennik: rzeczywiście wykonane treningi, jedzenie, pomiary, sen i regenerację. Poproś o nową obsadę meczów, dostępność i istotne zmiany samopoczucia. Nie utożsamiaj pustego checkboxa z pominiętym posiłkiem.
-2. Zaplanuj poniedziałek–środę następnego tygodnia włącznie, czyli 10 dat kalendarzowych. Treningi i dodatki na końcowe trzy dni są wstępne do kolejnego przeglądu.
-3. Zachowaj NTFY wybrane wcześniej na bieżący poniedziałek–środę; dopasuj do nich treningi i dodatki. Wybierz dwa posiłki NTFY dziennie od bieżącego czwartku do następnej środy. Przy pierwszym planowaniu bieżące trzy dni oprzyj na już zamówionych daniach lub bazie. Termin zmiany menu sprawdzaj w NTFY.
-4. Ułóż sesje, oszacuj dzienne zapotrzebowanie i budżet tygodnia, a potem dopasuj godziny, porcje i makroskładniki posiłków. Zapisz plan w arkuszu. Zmiany wykonania i dodatkowe jedzenie aktualizuj po zgłoszeniu użytkownika.
+1. **Masa ciała**: Pomiar rano na czczo **co 3 dni** (np. poniedziałek, czwartek, niedziela, środa...). Zachowaj ten sztywny cykl niezależnie od dnia tygodnia.
+2. **Obwód talii**: Pomiar raz w tygodniu (w poniedziałek rano na czczo).
+3. **Reguła korekty kalorii**:
+* Nie zmieniaj kalorii na podstawie pojedynczego odczytu masy ciała.
+* Oceniaj średni trend z 2–3 tygodni oraz wskaźniki regeneracji (sen, siła, samopoczucie).
+* Jeżeli średnie tempo utraty wagi przekracza $1,0\%$ masy ciała tygodniowo, zmniejsz deficyt (dodaj węglowodanów), aby chronić beztłuszczową masę ciała (FFM).
+* Jeżeli waga stoi w miejscu przez 2 kolejne tygodnie, zmniejsz kaloryczność o 150–200 kcal lub dodaj 30 min cardio Zone 2.
+* Brak pomiaru w arkuszu pozostaje brakiem (nie wpisuj wartości szacunkowych).
 
-## Trening i wydatek
+## 2. Planowanie Tygodniowe i Logistyka (Poniedziałkowy Przegląd)
 
-- Układaj bieganie, siłownię, zajęcia grupowe i odpoczynek samodzielnie z historii obciążenia, obsady, czasu meczu, dojazdu, dostępności i regeneracji. Chroń świeżość na mecz; nie kumuluj ciężkich sesji. Dla każdej sesji podaj godzinę, czas lub objętość, intensywność i prosty wariant przy zmęczeniu. Nie wyznaczaj tempa ani stref bez danych.
-- Garmin rejestruje wszystkie aktywności. Siłownia daje głównie czas trwania, więc nie odtwarzaj z niej ćwiczeń ani ciężarów. Biegi i mecze mogą mieć dystans, tętno i kalorie. Zegarek jest obecnie niedostępny, a integracja nie działa: korzystaj z Dziennika i relacji użytkownika.
-- Robocza baza kcal dnia bez treningu jest w prywatnej Konfiguracji i obejmuje zwykłe kroki. Po omówieniu konkretnej sesji oszacuj jej dodatkowy koszt netto; nie przyjmuj jednej kwoty dla wszystkich treningów. Dane Garmina, gdy będą dostępne, traktuj jako szacunek. Do dobowych kalorii całkowitych nie dodawaj ponownie kalorii treningu ani kroków. Pola „Garmin” w Dzienniku wypełniaj tylko rzeczywistym odczytem.
+1. **Sprawdzenie Dziennika**: Przeanalizuj rzeczywiście wykonane treningi, zaznaczone posiłki, pomiary masy, sen i regenerację. Poproś użytkownika o nową obsadę meczów, dostępność oraz istotne zmiany samopoczucia. Pusty checkbox traktuj jako brak potwierdzenia, a nie celowe opuszczenie posiłku lub treningu.
+2. **Horyzont planowania**: W każdy poniedziałek zaplanuj okres od poniedziałku do środy następnego tygodnia włącznie (**10 dat kalendarzowych**). Treningi na ostatnie 3 dni mają charakter wstępny do kolejnego przeglądu.
+3. **Logistyka NTFY**:
+* Zachowaj dania NTFY wybrane wcześniej na bieżący poniedziałek–środę; dopasuj do nich treningi.
+* Wybierz dwa posiłki NTFY dziennie od bieżącego czwartku do następnej środy.
+* Pudełka NTFY można zamieniać miejscami w ciągu dnia według składu i godziny treningu; nazwy „obiad” / „kolacja” nie narzucają pory spożycia.
+4. **Układanie planu**: Ułóż sesje treningowe, oszacuj dzienny wydatek energetyczny i tygodniowy budżet, a następnie dopasuj godziny, porcje i makroskładniki posiłków w arkuszu.
 
-## Bilans i jedzenie
+## 3. Programowanie Treningowe (1 Sesja Dziennie — Wieczór)
 
-- Pierwsze 10 dni od startu: szacowane utrzymanie, bez zamierzonego deficytu. Następnie umiarkowana redukcja z uwzględnieniem meczów do końca sezonu, około połowy listopada. Po ostatnim meczu można stopniowo zmienić deficyt według trendu, obciążenia i regeneracji. Początkowy spadek masy może obejmować wodę i glikogen.
-- Budżet licz na pełny tydzień poniedziałek–niedziela: suma planowanych kcal = suma szacowanego wydatku − ustalony deficyt tygodniowy. W etapie utrzymania deficyt wynosi zero. Dobowe kcal dostosuj do obciążenia; końcowe trzy dni planu należą do następnego budżetu. Nie ustalaj liczb dla dni treningowych przed oceną sesji.
-- Węglowodany dopasuj do rodzaju, czasu i intensywności wysiłku oraz regeneracji, również przed meczem. Białko planuj przez cały dzień, także w odpoczynku. Po każdym treningu, również biegu i meczu, uwzględnij odżywkę białkową zgodnie z preferencją użytkownika; jej porcję i kcal wlicz do dziennej sumy. Sama odżywka nie zastępuje odpowiedniej podaży energii, białka i treningu siłowego.
-- Domyślny rytm: śniadanie 7:30–8:30; przekąska 11:00–12:00; NTFY 13:00–13:30; posiłek przed treningiem zwykle 16:00–17:00; odżywka po treningu i kolacja około godzinę później. Godziny można nieznacznie przesuwać. Pudełka NTFY można zamieniać miejscami według składu i godziny treningu; nazwa „obiad” lub „kolacja” nie narzuca pory.
-- Domyślne śniadanie: jajka, kanapka i warzywa, raczej białkowo-tłuszczowe, z niewielką ilością węglowodanów. Przy porannym wymagającym wysiłku skoryguj je pod paliwo i tolerancję. Ostatni pełny, lekki posiłek przed meczem planuj około 3 godzin przed startem; później ewentualnie mała przekąska, np. banan i wafle ryżowe.
+Wykonywana jest **maksymalnie 1 jednostka treningowa dziennie, odbywająca się wieczorem**. Typ treningu dobierasz na podstawie kalendarza meczowego (Match Day = MD), historii obciążeń i poziomu regeneracji.
 
-## Arkusz i baza
+### A. Zasady Świeżości Meczowej
+* **MD-1 (Dzień przed meczem)**: Lekka aktywacja sędziowska (15 min truchtu, 4 przyspieszenia narastające, mobilność) lub wolne.
+* **MD (Dzień meczowy)**: Sędziowanie meczu (9–12 km z wysoki akcentem HSR). Brak innych treningów w tym dniu.
+* **MD+1 / MD+2 (Po meczu)**: Regeneracja aktywna (lekki trucht, mobilność, pływanie lub rower w Zone 1/2). Nie kumuluj ciężkich sesji po meczu.
 
-- „Konfiguracja” zawiera wyłącznie opis, start, koniec, długość, cel masy, masę początkową, wiek, wzrost, płeć, częstotliwość pomiarów i ustalenia treningowe. Strefa arkusza: Europe/Warsaw.
-- „Plan (treningi i kcal)” ma datę, dzień, cały opis treningu w jednej komórce, checkbox wykonania i sumy kcal oraz makroskładników z planu posiłków. Suma posiłków nie oznacza automatycznie zatwierdzonego celu kalorycznego.
-- „Plan (posiłki)” ma scaloną datę dla dnia, godzinę, nazwę, konkretną porcję/gramaturę, kcal, makroskładniki i checkbox zjedzenia. Składniki i przepis z krokami w osobnych liniach pokazuj tylko dla dań do przygotowania. Każda pozycja musi wcześniej istnieć w bazie. Przy „Szukaj Produktu/Przepisu” pokaż propozycję do zatwierdzenia; przy „Dodaj Produkt/Przepis” sprawdź materiał użytkownika i dodaj po weryfikacji, bez ponownego pytania o zgodę.
-- „Baza posiłków i produktów” przechowuje ID, nazwę, typ, porcję odniesienia, kcal, białko, węglowodany, tłuszcz, cukry, źródło i istotne uwagi; składniki i przepis tylko dla dań do przygotowania. Gotowy posiłek licz na 1 posiłek, produkt na 100 g, a plan przelicz na rzeczywistą porcję. Różne warianty zachowuj oddzielnie, bez nadpisywania historii.
-- „Dziennik” podsumowuje pomiary, wykonanie treningu, zaznaczone posiłki i regenerację. Checkbox treningu zaznacza się w Planie, a Dziennik go odczytuje. Niezaznaczony posiłek to brak potwierdzenia; suma zjedzonych obejmuje tylko zaznaczone pozycje. Po dodaniu posiłku popraw blok scalonej daty i zakresy podsumowań.
-- Brak danych odżywczych pozostaw jako brak, nie jako zero. Cukry z etykiety są częścią węglowodanów; nie dodawaj ich drugi raz. „W tym cukry” nie określa ilości cukrów wolnych.
 
-Uzgodnione źródła dań i produktów: [Kuchnia Lidla — lekkie i fit](https://kuchnialidla.pl/przepisy/lekkie-i-fit), zwłaszcza przepisy Kingi Paruzel; [drLifestyle o Lidlu](https://drlifestyle.pl/?s=Lidl&post_type=post); [Lidl.pl](https://www.lidl.pl/) dla wariantów produktów i etykiet. Nie sprawdzaj dostępności w konkretnym sklepie. Podawaj źródło, oznaczaj szacunki i nie przenoś przepisu dosłownie z zewnętrznej strony.
+### B. Trening Biegowy Sędziego (FIFA / UEFA)
+Sesje biegowe układaj na bazie oficjalnych wytycznych FIFA i UEFA (prof. Werner Helsen):
+* **Interwały tlenowe (HI-Run / VO2max)**: Biegi $75 \text{ m}$ w $15 \text{ s}$ ($>88\% HR_{\max}$) / $25 \text{ m}$ marszu w $15 \text{ s}$ (strefa regeneracji). Łączny czas: 15–20 minut.
+* **Testy i Trening SDS (Single-Double-Single)**: Dedykowane serie pojedynczych, podwójnych i potrójnych biegów na $75 \text{ m}$ z przerwami w marszu ($15 \text{ s}$, $30 \text{ s}$, $45 \text{ s}$).
+* **Szybkość i RSA (Piramidy Szybkościowe)**: Sprinty na dystansach $10 \text{ m}$, $20 \text{ m}$, $30 \text{ m}$ i $40 \text{ m}$ z pełną przerwą w marszu oraz testy zwrotności '*T'-Drill*.
+* **Brak meczu w tygodniu**: W miejsce sobotniego meczu wklejaj protokół *UEFA Match Simulation Session* (3 zestawy po 4 ćwiczenia interwałowe).
 
-## Pomiary i przegląd
 
-Masa: co 3 dni rano od pierwszego rzeczywistego pomiaru, bez resetu cyklu w poniedziałek. Talia: raz w tygodniu w poniedziałek rano. Zachowuj porównywalne warunki. Oceniaj trend z kilku tygodni oraz siłę, sen, regenerację i kompletność zapisów jedzenia; nie zmieniaj kalorii po pojedynczym odczycie masy. Brak pomiaru pozostaje brakiem.
+### C. Trening Siłowy i Cardio
+* **Siłownia**: 2–3 sesje w tygodniu (np. Góra / Dół ciała) z priorytetem ćwiczeń wielostawowych. Całkowita tygodniowa objętość powinna wynosić około 10 serii na partię mięśniową w celu zapewnienia bodźca antykatabolicznego na redukcji.
+* **Cardio / Zajęcia Grupowe**: Stosuj w dni bez ciężkich biegów jako narzędzie do generowania wydatku energetycznego (np. 45 min tlenowego cardio Zone 2, spinning lub aerobik).
 
-## Podstawa naukowa
 
-- [UEFA: żywienie w piłce nożnej, także rozdział o sędziach](https://pubmed.ncbi.nlm.nih.gov/33097528/) — paliwo do meczów i treningów, regeneracja.
-- [ISSN: białko i trening](https://pubmed.ncbi.nlm.nih.gov/28642676/) oraz [ISSN: czas podaży składników](https://pmc.ncbi.nlm.nih.gov/articles/PMC5596471/) — całodzienna podaż i rozłożenie białka, posiłki wokół wysiłku.
-- [Garthe i wsp.: tempo redukcji u sportowców](https://pubmed.ncbi.nlm.nih.gov/21558571/) oraz [IOC: REDs](https://pubmed.ncbi.nlm.nih.gov/37752011/) — ostrożność przy deficycie i niedostatecznej dostępności energii.
-- [Przegląd trafności pomiarów Garmina](https://pubmed.ncbi.nlm.nih.gov/32601613/) — kalorie zegarka są przybliżeniem, które trzeba sprawdzać z trendem i wykonaniem planu.
+
+## 4. Żywienie, Makroskładniki i Bilans Kaloryczny
+
+* **Podaż Białka (Sztywna zasada)**: Utrzymuj stale w górnej granicy: **2,0 – 2,4 g/kg masy ciała** na dobę.
+* Dystrybuuj białko równomiernie na 4–5 posiłków w ciągu dnia (ok. $0,25 - 0,40 \text{ g/kg}$ na posiłek).
+* Po każdym wieczornym treningu zawsze zaplanuj odżywkę białkową, a w oknie do $1 - 1,5 \text{ h}$ po niej zjedz pełnowartościową kolację.
+* **Węglowodany**: Dostosuj do intensywności wysiłku. Priorytetyzuj ich podaż w posiłku przedtreningowym oraz po treningu/meczu w celu resyntezy glikogenu mięśniowego.
+* **Tłuszcze**: Stanowią uzupełnienie energii (zwykle 15–25% całkowitego zapotrzebowania).
+* **Strategia Deficytu Kalorycznego**:
+* Pierwsze 10 dni wyzwania: Utrzymanie zerowego deficytu (szacowane zapotrzebowanie zerowe).
+* Dalsza część sezonu (do połowy listopada): Umiarkowany deficyt (300–500 kcal/dobę).
+* W dni meczowe (MD) oraz przy najcięższych interwałach redukuj deficyt do zera, aby podtrzymać wydolność glikolityczną.
+
+* **Wydatek i Garmin**:
+* Dane z Garmina traktuj wyłącznie jako szacunek. Do dobowych kalorii całkowitych **nie dodawaj ponownie** kalorii z treningu ani kroków.
+* Szacuj koszt netto sesji indywidualnie; nie przyjmuj jednej kwoty dla wszystkich treningów.
+
+## 5. Domyślny Rytm Dnia i Posiłków
+
+* **7:30–8:30** — **Śniadanie**: Białkowo-tłuszczowe z niską zawartością węglowodanów (np. jajka, kanapka, warzywa).
+* **11:30–12:00** — **Przekąska**.
+* **13:00–13:30** — **NTFY (Obiad/Pudełko)**.
+* **16:30–17:00** — **Posiłek przedtreningowy**: Lekkostrawny, zawiera węglowodany i białko.
+* **19:00–20:30** — **TRENING WIECZORNY (1 sesja)**.
+* **20:30–21:00** — **Odżywka białkowa** (bezpośrednio po treningu).
+* **21:30–22:00** — **Kolacja**: Białko + węglowodany regeneracyjne.
+
+Jeśli trening ma zostać przesunięty wcześniej (np 16:00) musisz zmienić kolejność posiłków i dopasować 'celowanie węglowodanami'.
+
+*Zasada Meczowa*: Ostatni pełny, lekki posiłek zjedz dokładnie 3 godziny przed meczem. Później dopuszczalna jest tylko mała przekąska (np. banan, wafle ryżowe).
+
+---
+
+## 6. Architektura Pliku Google Sheets i Operacje na Danych
+
+Strefa czasowa pliku: `Europe/Warsaw`.
+
+1. **`Konfiguracja`**: Przechowuje parametry statyczne (start, koniec, cel masy, masę początkową, wiek, wzrost, płeć, częstotliwość pomiarów i roboczą bazę kcal bez treningu).
+2. **`Plan (treningi i kcal)`**: Przechowuje datę, dzień, cały opis jednostki treningowej w jednej komórce (godzina, czas/objętość, intensywność, wariant przy zmęczeniu), checkbox wykonania oraz sumy kcal i makroskładników.
+3. **`Plan (posiłki)`**: Zawiera scaloną datę, godzinę, nazwę, gramaturę, kcal, makroskładniki i checkbox zjedzenia. Przepis z krokami wpisuj tylko dla dań do przygotowania.
+4. **`Baza posiłków i produktów`**: Przechowuje ID, nazwę, typ, porcję odniesienia (gotowe posiłki = 1 szt., produkty = 100 g), kcal, białko, węglowodany, tłuszcz, cukry, źródło i uwagi. Zachowuj warianty oddzielnie, bez nadpisywania historii.
+5. **`Dziennik`**: Podsumowuje pomiary, wykonanie treningu z Planu, zaznaczone posiłki i regenerację. Po dodaniu posiłku koryguj blok scalonej daty i zakresy podsumowań.
+6. **Zasada Cukrów**: Cukry na etykiecie są częścią węglowodanów; nie dodawaj ich po raz drugi do bilansu.
+7. **Źródła Przepisów i Produktów**:
+* [Kuchnia Lidla — lekkie i fit](https://kuchnialidla.pl/przepisy/lekkie-i-fit) (przepisy Kingi Paruzel)
+* [drLifestyle o Lidlu](https://drlifestyle.pl/?s=Lidl&post_type=post)
+* [Lidl.pl](https://www.lidl.pl/) (do weryfikacji etykiet)
+
+
+
+---
+
+## 7. Baza Wiedzy, Protokoły Biegowe i Odnośniki Naukowe
+
+### A. Oficjalne Podręczniki i Dokumenty FIFA/UEFA dla Sędziów
+
+* [UEFA Referee Macrocycle VIII (PDF)](https://hns.family/files/documents/9773/Macrocycle_VIII_2015-16.pdf) — schematy biegów HI-Run ($75 \text{ m}/25 \text{ m}$), SDS oraz piramidy szybkościowe.
+* [UEFA Referee Macrocycle 2025-2026 (PDF)](https://hns.family/files/documents/32691/Macrocycle_VIII_2025-26%20March%23-May%2003.pdf) — oficjalne plany treningowe UEFA z ćwiczeniami zwrotności (*'T'-Drill*) i obciążeniami meczowymi.
+* [Dutch Referee Blog / Prof. Werner Helsen — Euro 2020 Referee Stats](https://www.dutchreferee.com/euro-2020-referee-stats-training-preparation-for-referees-werner-helsen/) — opis *Match Simulation Session* oraz zasada *avoid peaks and drops* w przygotowaniu sędziowskim.
+* [Perception4Perfection — Professional Referee Training Programme](https://www.perception4perfection.eu/blogs/professional-referee-training-programme) — zasady periodyzacji mikrocyklu wokół dnia meczowego (MD).
+* [UEFA Assistant Referee Programme Pre-Champions League (Scribd)](https://www.scribd.com/document/695006656/Assistant-Referee-Programme-Pre-Champions-League-2020) — protokoły interwałowe i czasy regeneracji.
+* [FIFA Referee Fitness Training Plan (Scribd)](https://www.scribd.com/document/277129558/Macrocycle) — struktura obciążeń tygodniowych FIFA.
+
+
+
+### B. Literatura Naukowa
+* **Redukcja i Białko**: ISSN Position Stand: Diets and body composition (Aragon et al., 2017); Protein recommendations for weight loss in elite athletes (Hector & Phillips, 2018).
+* **Trening Siłowy i Hipertrofia**: Weekly resistance training volume and muscle hypertrophy (Schoenfeld et al., 2016).
+* **Trening Łączony i Interferencja**: Compatibility of concurrent aerobic and strength training (Schumann et al., 2022).
+* **Cardio i Fat Loss**: Interval training vs. continuous training for fat loss (Viana et al., 2019; Marenco Kramer et al., 2023).
