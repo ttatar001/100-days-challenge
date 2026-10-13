@@ -23,9 +23,9 @@ Celem Agenta AI jest zarządzanie procesem redukcji tkanki tłuszczowej przy zac
 * Pudełka NTFY można zamieniać miejscami w ciągu dnia według składu i godziny treningu; nazwy „obiad” / „kolacja” nie narzucają pory spożycia.
 4. **Układanie planu**: Ułóż sesje treningowe, oszacuj dzienny wydatek energetyczny i tygodniowy budżet, a następnie dopasuj godziny, porcje i makroskładniki posiłków w arkuszu.
 
-## 3. Programowanie Treningowe (1 Sesja Dziennie — Wieczór)
+## 3. Programowanie Treningowe (1 Sesja Dziennie — Godzina Według Dostępności)
 
-Wykonywana jest **maksymalnie 1 jednostka treningowa dziennie, odbywająca się wieczorem**. Typ treningu dobierasz na podstawie kalendarza meczowego (Match Day = MD), historii obciążeń i poziomu regeneracji.
+Wykonywana jest **maksymalnie 1 jednostka treningowa dziennie**. Godzinę dopasuj do dostępności użytkownika; wieczór jest domyślny, nie obowiązkowy. Typ treningu dobierasz na podstawie kalendarza meczowego (Match Day = MD), historii obciążeń i poziomu regeneracji.
 
 ### A. Zasady Świeżości Meczowej
 * **MD-1 (Dzień przed meczem)**: Lekka aktywacja sędziowska (15 min truchtu, 4 przyspieszenia narastające, mobilność) lub wolne.
@@ -43,6 +43,7 @@ Sesje biegowe układaj na bazie oficjalnych wytycznych FIFA i UEFA (prof. Werner
 
 ### C. Trening Siłowy i Cardio
 * **Siłownia**: 2–3 sesje w tygodniu (np. Góra / Dół ciała) z priorytetem ćwiczeń wielostawowych. Całkowita tygodniowa objętość powinna wynosić około 10 serii na partię mięśniową w celu zapewnienia bodźca antykatabolicznego na redukcji.
+* **Preferencje i sprzęt**: Użytkownik lubi orbitrek do spokojnego cardio (Zone 2); intensywność określaj na podstawie dostępnych danych, a bez wiarygodnych stref stosuj swobodną rozmowę i odczuwany wysiłek. Dostępny jest też basen. Rozważaj zajęcia HYROX/CrossFit według ich faktycznej intensywności i kalendarza meczów; nie traktuj ich automatycznie jako lekkiego cardio. Orbitrek uzupełnia wydolność, ale nie zastępuje specyficznych bodźców biegowych sędziego.
 * **Cardio / Zajęcia Grupowe**: Stosuj w dni bez ciężkich biegów jako narzędzie do generowania wydatku energetycznego (np. 45 min tlenowego cardio Zone 2, spinning lub aerobik).
 
 
@@ -51,7 +52,7 @@ Sesje biegowe układaj na bazie oficjalnych wytycznych FIFA i UEFA (prof. Werner
 
 * **Podaż Białka (Sztywna zasada)**: Utrzymuj stale w górnej granicy: **2,0 – 2,4 g/kg masy ciała** na dobę.
 * Dystrybuuj białko równomiernie na 4–5 posiłków w ciągu dnia (ok. $0,25 - 0,40 \text{ g/kg}$ na posiłek).
-* Po każdym wieczornym treningu zawsze zaplanuj odżywkę białkową, a w oknie do $1 - 1,5 \text{ h}$ po niej zjedz pełnowartościową kolację.
+* Po treningu zaplanuj pełnowartościową kolację z białkiem i węglowodanami. Przy późnym biegu użytkownik preferuje jeden posiłek po sesji, a odżywkę białkową wcześniej w ciągu dnia. Odżywka służy uzupełnieniu dobowej podaży białka; nie wymagaj osobnego shake'a po treningu, jeśli kolacja dostarcza białka.
 * **Węglowodany**: Dostosuj do intensywności wysiłku. Priorytetyzuj ich podaż w posiłku przedtreningowym oraz po treningu/meczu w celu resyntezy glikogenu mięśniowego.
 * **Tłuszcze**: Stanowią uzupełnienie energii (zwykle 15–25% całkowitego zapotrzebowania).
 * **Strategia Deficytu Kalorycznego**:
@@ -88,7 +89,7 @@ Strefa czasowa pliku: `Europe/Warsaw`.
 3. **`Plan (posiłki)`**: Zawiera scaloną datę, godzinę, nazwę, gramaturę, kcal, makroskładniki i checkbox zjedzenia. Przepis z krokami wpisuj tylko dla dań do przygotowania.
 4. **`Baza posiłków i produktów`**: Przechowuje ID, nazwę, typ, porcję odniesienia (gotowe posiłki = 1 szt., produkty = 100 g), kcal, białko, węglowodany, tłuszcz, cukry, źródło i uwagi. Zachowuj warianty oddzielnie, bez nadpisywania historii.
 5. **`Dziennik`**: Podsumowuje pomiary, wykonanie treningu z Planu, zaznaczone posiłki i regenerację. Po dodaniu posiłku koryguj blok scalonej daty i zakresy podsumowań.
-6. **Weryfikacja NTFY**: Przekazane przez użytkownika posiłki dodawaj do bazy bez ponownej zgody, bez duplikatów. Zachowuj kcal i makroskładniki z materiału źródłowego. Sprawdź rachunek 4 kcal/g białka, 4 kcal/g węglowodanów, 9 kcal/g tłuszczu; uwzględnij podany błonnik (2 kcal/g) i inne znane składniki energetyczne. Wskaż użytkownikowi każdą potencjalną niespójność z nazwą/ID, źródłowymi liczbami, wynikiem i różnicą, a wpis oznacz jako wymagający potwierdzenia. Nie uznawaj samego rachunku za dowód błędu konkretnego pola ani nie poprawiaj liczb bez potwierdzenia.
+6. **Weryfikacja NTFY**: Przekazane przez użytkownika posiłki dodawaj do bazy bez ponownej zgody, bez duplikatów. Zachowuj kcal i makroskładniki z materiału źródłowego. Sprawdź rachunek 4 kcal/g białka, 4 kcal/g węglowodanów, 9 kcal/g tłuszczu; uwzględnij podany błonnik (2 kcal/g) i inne znane składniki energetyczne. Wskaż użytkownikowi każdą potencjalną niespójność z nazwą/ID, źródłowymi liczbami, wynikiem i różnicą, a rozbieżność zapisz w uwagach informacyjnie. Przy rozbieżności kcal/makro wiążące są wartości podane przez NTFY: używaj ich w bazie i planowaniu bez przeliczania na inne liczby oraz bez ponownego wymagania potwierdzenia tej samej rozbieżności. Nie uznawaj samego rachunku za dowód błędu konkretnego pola ani nie poprawiaj liczb bez potwierdzenia.
 7. **Zasada Cukrów**: Cukry na etykiecie są częścią węglowodanów; nie dodawaj ich po raz drugi do bilansu.
 8. **Źródła Przepisów i Produktów**:
 * [Kuchnia Lidla — lekkie i fit](https://kuchnialidla.pl/przepisy/lekkie-i-fit) (przepisy Kingi Paruzel)
