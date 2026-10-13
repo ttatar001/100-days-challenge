@@ -1,60 +1,46 @@
-# Wyzwanie 100 DNI — instrukcja projektu, draft v0.1
+# Wyzwanie 100 DNI — uzgodniony proces
 
-## Cel i ustalenia
+Celem jest redukcja masy przy zachowaniu sprawności i świeżości potrzebnej sędziemu piłkarskiemu. Bieżące dane i ustalone wartości liczbowe czytaj w prywatnym Google Sheets „100 days challenge”. Nie przenoś ich do publicznego repozytorium. Poniższe reguły określają sposób planowania, nie są gotowym jadłospisem ani schematem treningów.
 
-Pomagaj użytkownikowi zmniejszyć masę ciała w ciągu 100 dni, zachowując zdrowe odżywianie, sprawność biegową oraz świeżość potrzebną do sędziowania piłki nożnej. Liczbowy cel redukcji, zapotrzebowanie energetyczne i cele makroskładników ustal po poznaniu profilu użytkownika. Nie zakładaj daty startu ani nie obiecuj konkretnego wyniku.
+## Poniedziałkowe planowanie
 
-Pracujemy w projekcie Codexa z instrukcjami w repozytorium GitHub oraz jednym bieżącym arkuszem Google Sheets z dwiema zakładkami: „Plan i dziennik” i „Posiłki”. Źródło planu i pomiarów: prywatny arkusz „100 days challenge”, odnajdywany przez połączoną wtyczkę Google Drive zgodnie z AGENTS.md. Prywatnego adresu i identyfikatora arkusza nie publikujemy w repozytorium. Użytkownik zatwierdził odczyt, aktualizacje i kopie zapasowe tego arkusza przez połączoną wtyczkę Google Drive. Nie usuwamy plików na Dysku i nie zmieniamy ich udostępniania. `data/Wyzwanie_100_DNI_draft.xlsx` jest archiwalnym draftem; nie synchronizujemy go automatycznie z bieżącym arkuszem. Przed edycją tworzymy kopię na Drive z datą i godziną Europe/Warsaw. Dane zdrowotne i pomiary pozostają w prywatnym arkuszu, poza publicznym repozytorium. Integracja z Garminem przez python-garminconnect jest wybraną drogą na kolejny etap. NTFY na początku wprowadzamy ręcznie. Scraper NTFY pozostaje pomysłem na przyszłość.
+1. Sprawdź Dziennik: rzeczywiście wykonane treningi, jedzenie, pomiary, sen i regenerację. Poproś o nową obsadę meczów, dostępność i istotne zmiany samopoczucia. Nie utożsamiaj pustego checkboxa z pominiętym posiłkiem.
+2. Zaplanuj poniedziałek–środę następnego tygodnia włącznie, czyli 10 dat kalendarzowych. Treningi i dodatki na końcowe trzy dni są wstępne do kolejnego przeglądu.
+3. Zachowaj NTFY wybrane wcześniej na bieżący poniedziałek–środę; dopasuj do nich treningi i dodatki. Wybierz dwa posiłki NTFY dziennie od bieżącego czwartku do następnej środy. Przy pierwszym planowaniu bieżące trzy dni oprzyj na już zamówionych daniach lub bazie. Termin zmiany menu sprawdzaj w NTFY.
+4. Ułóż sesje, oszacuj dzienne zapotrzebowanie i budżet tygodnia, a potem dopasuj godziny, porcje i makroskładniki posiłków. Zapisz plan w arkuszu. Zmiany wykonania i dodatkowe jedzenie aktualizuj po zgłoszeniu użytkownika.
 
-## Treningi
+## Trening i wydatek
 
-1. Obsada meczowa, dostępność użytkownika, dojazd i regeneracja są podstawą planowania.
-2. Użytkownik w poniedziałek przekazuje obsadę i proponowane treningi biegowe. Są materiałem do oceny: możesz je przesuwać, zmieniać lub pominąć. Krótko uzasadniaj istotne odstępstwa. Oznacz oddzielnie zajęcia faktycznie obowiązkowe, gdy użytkownik takie wskaże.
-3. Uwzględniaj poprzedni weekend oraz wszystkie mecze nadchodzącego weekendu. Zapytaj o rolę, czas i przewidywane obciążenie meczu, jeśli zmieniają plan.
-4. Dopasowuj dodatkowe bieganie, siłownię i zajęcia grupowe do obciążenia i doświadczenia. Unikaj kumulowania ciężkich sesji, które mogą pogorszyć świeżość meczową. Przerwy między sesjami dobieraj indywidualnie, bez jednej sztywnej reguły dla każdego treningu.
-5. Podawaj datę, godzinę, rodzaj, czas lub objętość i intensywność treningu oraz wariant przy większym zmęczeniu. Nie wyznaczaj tempa lub stref bez danych o użytkowniku.
+- Układaj bieganie, siłownię, zajęcia grupowe i odpoczynek samodzielnie z historii obciążenia, obsady, czasu meczu, dojazdu, dostępności i regeneracji. Chroń świeżość na mecz; nie kumuluj ciężkich sesji. Dla każdej sesji podaj godzinę, czas lub objętość, intensywność i prosty wariant przy zmęczeniu. Nie wyznaczaj tempa ani stref bez danych.
+- Garmin rejestruje wszystkie aktywności. Siłownia daje głównie czas trwania, więc nie odtwarzaj z niej ćwiczeń ani ciężarów. Biegi i mecze mogą mieć dystans, tętno i kalorie. Zegarek jest obecnie niedostępny, a integracja nie działa: korzystaj z Dziennika i relacji użytkownika.
+- Robocza baza kcal dnia bez treningu jest w prywatnej Konfiguracji i obejmuje zwykłe kroki. Po omówieniu konkretnej sesji oszacuj jej dodatkowy koszt netto; nie przyjmuj jednej kwoty dla wszystkich treningów. Dane Garmina, gdy będą dostępne, traktuj jako szacunek. Do dobowych kalorii całkowitych nie dodawaj ponownie kalorii treningu ani kroków. Pola „Garmin” w Dzienniku wypełniaj tylko rzeczywistym odczytem.
 
-## Jedzenie
+## Bilans i jedzenie
 
-1. Punktem wyjścia jest harmonogram treningów oraz dwa posiłki NTFY dziennie. Najpierw wykorzystuj już zamówione dania, potem dobieraj dostępne pudełka i uzupełnienia z własnej bazy.
-2. Nazwa „obiad” lub „kolacja” nie ustala godziny jedzenia. Pora zależy od treningu, tolerancji i rytmu dnia. Uwzględniaj termin przydatności i instrukcję przechowywania z etykiety.
-3. Przechowuj dla porcji: nazwę, źródło, ilość lub gramaturę, kcal, białko, węglowodany, tłuszcz, cukry ogółem, skład i ewentualnie błonnik, link oraz opis przygotowania. Jeżeli dane są na 100 g, przelicz je na rzeczywistą porcję. Dla różnych wersji lub gramatur NTFY zachowuj odrębne ID. Nie nadpisuj historycznego dania nową wersją.
-4. Brak wartości odżywczej jest brakiem danych. Zero jest rzeczywistym zerem. Nie szacuj nieznanych danych pudełka jako faktu. Odczyt ze zdjęcia z nieczytelną wartością wymaga sprawdzenia.
-5. Cukry ogółem zapisuj i sumuj osobno. Są już zawarte w węglowodanach, więc nie dodawaj ich ponownie do kalorii ani do węglowodanów. Rozróżniaj cukry ogółem, dodane i wolne. Z samej pozycji „w tym cukry” nie można ustalić gramów cukrów wolnych. Nie nakładaj progu WHO dla cukrów wolnych na wszystkie cukry z etykiet. Na podstawie składu możesz opisać źródła cukrów bez przypisywania nieznanych ilości.
-6. Odżywkę białkową traktuj jako produkt uzupełniający jedzenie i wliczaj jej energię oraz makroskładniki. Nie dodawaj jej automatycznie do każdego treningu.
-7. Plan i wykonanie zapisuj oddzielnie. W rozpisce jedzenia podaj datę, godzinę, ID posiłku i porcje planowane; porcje zjedzone uzupełnij po fakcie. Puste wykonanie oznacza brak raportu, zero oznacza pominięcie. Sumy wykonania obejmują zapisane porcje i mogą być częściowe.
+- Pierwsze 10 dni od startu: szacowane utrzymanie, bez zamierzonego deficytu. Następnie umiarkowana redukcja z uwzględnieniem meczów do końca sezonu, około połowy listopada. Po ostatnim meczu można stopniowo zmienić deficyt według trendu, obciążenia i regeneracji. Początkowy spadek masy może obejmować wodę i glikogen.
+- Budżet licz na pełny tydzień poniedziałek–niedziela: suma planowanych kcal = suma szacowanego wydatku − ustalony deficyt tygodniowy. W etapie utrzymania deficyt wynosi zero. Dobowe kcal dostosuj do obciążenia; końcowe trzy dni planu należą do następnego budżetu. Nie ustalaj liczb dla dni treningowych przed oceną sesji.
+- Węglowodany dopasuj do rodzaju, czasu i intensywności wysiłku oraz regeneracji, również przed meczem. Białko planuj przez cały dzień, także w odpoczynku. Po każdym treningu, również biegu i meczu, uwzględnij odżywkę białkową zgodnie z preferencją użytkownika; jej porcję i kcal wlicz do dziennej sumy. Sama odżywka nie zastępuje odpowiedniej podaży energii, białka i treningu siłowego.
+- Domyślny rytm: śniadanie 7:30–8:30; przekąska 11:00–12:00; NTFY 13:00–13:30; posiłek przed treningiem zwykle 16:00–17:00; odżywka po treningu i kolacja około godzinę później. Godziny można nieznacznie przesuwać. Pudełka NTFY można zamieniać miejscami według składu i godziny treningu; nazwa „obiad” lub „kolacja” nie narzuca pory.
+- Domyślne śniadanie: jajka, kanapka i warzywa, raczej białkowo-tłuszczowe, z niewielką ilością węglowodanów. Przy porannym wymagającym wysiłku skoryguj je pod paliwo i tolerancję. Ostatni pełny, lekki posiłek przed meczem planuj około 3 godzin przed startem; później ewentualnie mała przekąska, np. banan i wafle ryżowe.
 
-## Rytm planowania
+## Arkusz i baza
 
-- Piątek lub sobota: wybór NTFY na najbliższy poniedziałek, wtorek i środę na podstawie przewidywanej aktywności. Zachowuj elastyczność dodatków do posiłków.
-- NTFY ma termin dwa dni przed dostawą do 16:00. Dla poniedziałku wypada on w sobotę o 16:00. Licznik w aplikacji dla danego zamówienia ma pierwszeństwo przed założeniem arkusza.
-- Poniedziałek wieczorem: przegląd rezultatów, nowa obsada, ocena sugerowanych treningów i ułożenie tygodnia. Na poniedziałek–środę wykorzystuj zamówione pudełka, zmieniając przyszłe godziny i własne dodatki. Posiłki już zjedzone pozostają wykonaniem.
-- W poniedziałek wybieraj również NTFY na czwartek–niedzielę, jeśli menu jest dostępne. Gdy menu lub termin wyboru ogranicza plan, wskaż konkretną datę uzupełnienia. Niedziela pozostaje częścią planu.
-- Planowania ani przypomnień nie traktuj jako aktywnej automatyzacji, dopóki nie zostaną uruchomione. Nie zamawiaj posiłków ani nie zmieniaj zewnętrznych usług bez takiego zlecenia.
+- „Konfiguracja” zawiera wyłącznie opis, start, koniec, długość, cel masy, masę początkową, wiek, wzrost, płeć, częstotliwość pomiarów i ustalenia treningowe. Strefa arkusza: Europe/Warsaw.
+- „Plan (treningi i kcal)” ma datę, dzień, cały opis treningu w jednej komórce, checkbox wykonania i sumy kcal oraz makroskładników z planu posiłków. Suma posiłków nie oznacza automatycznie zatwierdzonego celu kalorycznego.
+- „Plan (posiłki)” ma scaloną datę dla dnia, godzinę, nazwę, konkretną porcję/gramaturę, kcal, makroskładniki i checkbox zjedzenia. Składniki i przepis z krokami w osobnych liniach pokazuj tylko dla dań do przygotowania. Każda pozycja musi wcześniej istnieć w bazie.
+- „Baza posiłków i produktów” przechowuje ID, nazwę, typ, porcję odniesienia, kcal, białko, węglowodany, tłuszcz, cukry, źródło i istotne uwagi; składniki i przepis tylko dla dań do przygotowania. Gotowy posiłek licz na 1 posiłek, produkt na 100 g, a plan przelicz na rzeczywistą porcję. Różne warianty zachowuj oddzielnie, bez nadpisywania historii.
+- „Dziennik” podsumowuje pomiary, wykonanie treningu, zaznaczone posiłki i regenerację. Checkbox treningu zaznacza się w Planie, a Dziennik go odczytuje. Niezaznaczony posiłek to brak potwierdzenia; suma zjedzonych obejmuje tylko zaznaczone pozycje. Po dodaniu posiłku popraw blok scalonej daty i zakresy podsumowań.
+- Brak danych odżywczych pozostaw jako brak, nie jako zero. Cukry z etykiety są częścią węglowodanów; nie dodawaj ich drugi raz. „W tym cukry” nie określa ilości cukrów wolnych.
 
-## Pomiary — proponowany standard
+Uzgodnione źródła dań i produktów: [Kuchnia Lidla — lekkie i fit](https://kuchnialidla.pl/przepisy/lekkie-i-fit), zwłaszcza przepisy Kingi Paruzel; [drLifestyle o Lidlu](https://drlifestyle.pl/?s=Lidl&post_type=post); [Lidl.pl](https://www.lidl.pl/) dla wariantów produktów i etykiet. Nie sprawdzaj dostępności w konkretnym sklepie. Podawaj źródło, oznaczaj szacunki i nie przenoś przepisu dosłownie z zewnętrznej strony.
 
-- Masa ciała: proponowane poniedziałek, środa i piątek rano. Codzienne pomiary są opcjonalne. Jeżeli użytkownik wybierze raz w tygodniu, zachowaj tę samą porę i dzień oraz oceniaj dłuższy trend.
-- Ważenie: po toalecie, przed jedzeniem i piciem, na tej samej wadze, na twardym równym podłożu, bez ubrania lub w takim samym lekkim ubraniu.
-- Oceniaj średnią z pomiarów z ostatnich siedmiu dni oraz trend z kolejnych tygodni. Arkusz pokazuje średnią po co najmniej trzech ważnych pomiarach w oknie siedmiu dni. To przyjęta reguła raportowania, nie medyczny próg. Pojedynczy pomiar zachowaj bez automatycznego usuwania jako „odstającego”.
-- Talia: proponowane raz w tygodniu, w poniedziałek rano. Mierz w połowie odległości między dolnym żebrem a górną krawędzią kości biodrowej, po naturalnym wydechu, na rozluźnionym brzuchu. Taśma ma być poziomo i bez uciskania skóry. Wykonaj dwa pomiary; przy wyraźnej różnicy powtórz i zapisz średnią dwóch zgodnych odczytów.
-- Biodra i udo: opcjonalnie na starcie, co cztery tygodnie i na końcu. Biodra w najszerszym miejscu pośladków. Udo zawsze tej samej nogi, w jednym zapisanym miejscu, np. stałej odległości nad górną krawędzią rzepki. Nie porównuj różnych miejsc pomiaru.
-- Sen i zmęczenie są pomocnicze. Skala zmęczenia: 1 = wypoczęty, 5 = bardzo zmęczony. Te pola nie służą diagnozowaniu chorób.
+## Pomiary i przegląd
 
-## Ocena i korekty
+Masa: co 3 dni rano od pierwszego rzeczywistego pomiaru, bez resetu cyklu w poniedziałek. Talia: raz w tygodniu w poniedziałek rano. Zachowuj porównywalne warunki. Oceniaj trend z kilku tygodni oraz siłę, sen, regenerację i kompletność zapisów jedzenia; nie zmieniaj kalorii po pojedynczym odczycie masy. Brak pomiaru pozostaje brakiem.
 
-Oceniaj masę, talię, wykonanie jedzenia, obciążenie i samopoczucie łącznie. Kalorie Garmina są szacunkiem. Rozróżniaj kalorie aktywne i całkowite; nie dodawaj treningu drugi raz do całkowitego wydatku. Nie obniżaj jedzenia wyłącznie po jednym wzroście masy. Pogorszenie formy, utrzymujące się zmęczenie, ból lub słaba regeneracja wymagają przeglądu obciążeń i podaży energii oraz, zależnie od problemu, konsultacji specjalisty. Przy ważnych zaleceniach korzystaj z wiarygodnych wytycznych i podawaj źródło. Nie przedstawiaj przypuszczeń jako pomiaru.
+## Podstawa naukowa
 
-## Dane do ustalenia przed pierwszym planem
-
-Data startu, wiek, wzrost, aktualna i docelowa masa, zdrowie i leki istotne dla diety/treningu, urazy, historia biegania i siłowni, dostępny sprzęt, godziny pracy i snu, preferencje i wykluczenia jedzenia, szczegóły pakietu NTFY oraz przykład opisu dania. Jeżeli użytkownik ma szczególny powód ograniczania cukru, uwzględnij jego wyjaśnienie przy doborze zasad.
-
-## Źródła pomiarów i definicji
-
-- NHS England, How to Record Your Weight: https://www.england.nhs.uk/wp-content/uploads/2021/06/PRN00916-how-to-record-your-weight.pdf
-- Cleveland Clinic, The Best Time To Weigh Yourself: https://health.clevelandclinic.org/when-is-the-best-time-to-weigh-yourself
-- East Lancashire Hospitals NHS Trust, Body measuring techniques: https://elht.nhs.uk/services/dietetics/body-measuring-techniques
-- Cambridge University Hospitals, technika pomiaru talii: https://www.cuh.nhs.uk/patient-information/managing-your-weight-if-you-have-asthma/
-- NHS, Sugar: the facts: https://www.nhs.uk/live-well/eat-well/food-types/how-does-sugar-in-our-diet-affect-our-health/
-- WHO, definicja i zalecenia dotyczące cukrów wolnych: https://www.who.int/news/item/04-03-2015-who-calls-on-countries-to-reduce-sugars-intake-among-adults-and-children
-- NTFY, termin wyboru menu: https://ntfy.pl/pierwsze-zamowienie-dieta-sport
+- [UEFA: żywienie w piłce nożnej, także rozdział o sędziach](https://pubmed.ncbi.nlm.nih.gov/33097528/) — paliwo do meczów i treningów, regeneracja.
+- [ISSN: białko i trening](https://pubmed.ncbi.nlm.nih.gov/28642676/) oraz [ISSN: czas podaży składników](https://pmc.ncbi.nlm.nih.gov/articles/PMC5596471/) — całodzienna podaż i rozłożenie białka, posiłki wokół wysiłku.
+- [Garthe i wsp.: tempo redukcji u sportowców](https://pubmed.ncbi.nlm.nih.gov/21558571/) oraz [IOC: REDs](https://pubmed.ncbi.nlm.nih.gov/37752011/) — ostrożność przy deficycie i niedostatecznej dostępności energii.
+- [Przegląd trafności pomiarów Garmina](https://pubmed.ncbi.nlm.nih.gov/32601613/) — kalorie zegarka są przybliżeniem, które trzeba sprawdzać z trendem i wykonaniem planu.

@@ -1,37 +1,10 @@
-# Stan projektu na 12 października 2026
+# Stan projektu — 13 października 2026
 
-## Cel
+- Bieżący plan, baza i pomiary są w prywatnym Google Sheets „100 days challenge”. Repozytorium zawiera tylko instrukcje i opis planowanej integracji Garmina. Dane zdrowotne i liczby profilu pozostają w arkuszu.
+- Arkusz ma pięć zakładek: Konfiguracja, Plan (treningi i kcal), Plan (posiłki), Baza posiłków i produktów, Dziennik. Wpisy jedzenia na najbliższe dni są testowe, a treningi propozycjami. Nie traktuj ich jako zatwierdzonego planu ani wykonania.
+- Ustalono planowanie w poniedziałek do środy następnego tygodnia. NTFY na bieżący poniedziałek–środę pochodzi z poprzedniego wyboru; nowe wybory obejmują czwartek–następną środę. Menu jest dostępne z wystarczającym wyprzedzeniem.
+- Użytkownik wybrał w arkuszu roboczą bazę kalorii dla dnia bez treningu. Pierwsze 10 dni to etap utrzymania bez zamierzonego deficytu. Koszt poszczególnych treningów i cele kalorii na dni treningowe nie są jeszcze uzgodnione. Później przewidziano umiarkowaną redukcję w sezonie meczowym, a po sezonie przegląd tempa.
+- Zegarek jest w reklamacji. Garmin rejestruje wszystkie aktywności, ale dla siłowni podaje głównie czas; biegi i mecze mają pełniejsze dane. Integracja odczytowa nie działa. NTFY wprowadzamy ręcznie.
+- Uzyskano preferencje rytmu posiłków, śniadań, jedzenia przed meczem, odżywki po treningu oraz częstotliwości pomiarów; są w `RULES.md`. Nadal wymagają ustalenia konkretne sesje, liczbowe cele na dni treningowe oraz indywidualne wykluczenia żywieniowe.
 
-100 dni redukcji masy z utrzymaniem zdrowego odżywiania i treningów dostosowanych do pracy sędziego piłkarskiego. Data startu i roboczy cel liczbowy są zapisane w prywatnym arkuszu; wymagają weryfikacji wraz z profilem i rzeczywistymi pomiarami.
-
-## Gotowe
-
-- Bieżące źródło planu i pomiarów: prywatny arkusz Google Sheets „100 days challenge”, zakładki „Plan i dziennik” i „Posiłki”. Agent odnajduje go przez Google Drive według instrukcji AGENTS.md; adresu i identyfikatora nie publikujemy.
-- Migracja draftu `data/Wyzwanie_100_DNI_draft.xlsx` do powyższego, wcześniej pustego arkusza Google Sheets. Zachowano istniejący link; XLSX pozostaje archiwalną kopią.
-- Sprawdzono przez API zgodność wartości, wszystkich 7300 formuł, 1380 reguł walidacji i formatowania komórek z natywnym importem; nie wykryto błędów formuł. Zachowano zamrożone nagłówki, formatowanie warunkowe i wymiary układu; strefa czasu Europe/Warsaw. Podgląd wizualny w przeglądarce nie był dostępny.
-- Na Google Drive zachowano kopię „100 days challenge — kopia importu 2026-10-12” przed dalszymi zmianami.
-- Plan i pomiary na 100 dni, baza 80 posiłków oraz 600 miejsc na wpisy posiłków. Daty pojawiają się po wpisaniu daty startu w B4 pierwszej zakładki.
-- Oddzielne porcje planowane i zjedzone. Automatyczne dzienne sumy planowanych kcal, białka, węglowodanów, tłuszczu i cukrów. W dzienniku są też sumy zapisanych zjedzonych kcal i cukrów; szczegóły pozostałych makroskładników wykonania są w rozpisce posiłków.
-- Średnia masy z siedmiu dni, pokazywana od trzech ważnych pomiarów w tym oknie.
-- Sprawdzenie obliczeń dla planu i wykonania, zera i braków cukrów, powtórzonych ID posiłku, braku raportu wykonania, średniej masy oraz ostatniego dnia wyzwania. Dane użyte wyłącznie do sprawdzenia usunięto z dostarczonego draftu.
-- Ustalenia i instrukcja w `RULES.md`; reguły agentowe w `AGENTS.md`.
-
-## Ustalenia użytkownika
-
-- Zaczynamy prosto. Użytkownik chce kontynuować w Codexie w trybie agentowym.
-- 12 października 2026 użytkownik zmienił wcześniejsze ustalenie i zatwierdził przeniesienie danych z GitHuba do Google Sheets oraz aktualizację instrukcji agenta. Korzystamy z połączonej wtyczki Google Drive do odczytu, aktualizacji i kopii wskazanego arkusza. Zakaz usuwania plików i zmiany udostępniania pozostaje w mocy.
-- Dane Garmina: wybrano `python-garminconnect`. Importer nie został jeszcze napisany ani podłączony do konta.
-- NTFY: dwa pudełka dziennie, obiad i kolacja. Opisy są wprowadzane ręcznie; użytkownik prześle przykłady. Cukry są dla niego istotnym parametrem. Powód dodatkowego ograniczania cukru nie jest jeszcze znany.
-- Obsada i sugerowane treningi biegowe przychodzą w poniedziałek. Treningi są sugestiami, nie bezwzględnymi poleceniami.
-- Piątek/sobota: wybór NTFY na poniedziałek–środę. Poniedziałek: dopasowanie własnych dodatków do już zamówionych dań i wybór pudełek na kolejne dni. Uwzględniamy również niedzielę.
-- Termin NTFY: dwa dni przed dostawą do 16:00; licznik konkretnego zamówienia ma pierwszeństwo.
-- Pomiary raz tygodniowo są akceptowalne dla użytkownika. Zaproponowano masę trzy razy tygodniowo, talię raz tygodniowo, biodra i udo opcjonalnie co cztery tygodnie. Częstotliwość wymaga jeszcze jego wyboru.
-- Użytkownik oczekuje krótkiej, sprawnej pracy. Nie rozbudowuj prostego zadania w wieloetapowy system.
-
-## Najbliższy krok
-
-W prywatnym arkuszu są roboczy cel, profil, aktualny plan treningów oraz propozycja pełnego jedzenia na pierwsze dwa dni. Wprowadzono cztery dania NTFY, kefir, szacunkowe śniadanie i odżywkę oraz proponowany dodatek białkowy. Porcje i godziny zapisano jako plan; wykonanie pozostaje puste. Sumy kalorii i makroskładników oraz zachowanie formuł sprawdzono przez API. Dane szacunkowe oznaczono, niepełne cukry pozostają brakiem danych, a niespójności kcal/makro etykiet wymagają weryfikacji. Następnie potwierdź etykiety i porcje dodatków oraz odpowiedź o ograniczeniach żywieniowych i celu kontroli cukrów. Zbierz pozostałe dania NTFY, by dokończyć tydzień; oceniaj trend i samopoczucie przed korektami kalorii. Dane osobowe, szczegóły posiłków i pomiary pozostają poza repozytorium. Przed zmianami zachowano kopie. Importer Garmina pozostaje późniejszym etapem.
-
-## Niewdrożone
-
-Importer Garmina, scraper NTFY, automatyczne cykliczne uruchamianie, integracja kalendarza. Google Sheets jest połączony i dostępny do pracy na żądanie. Nie ma automatycznej synchronizacji z XLSX, logowania do Garmina ani realnych pomiarów użytkownika.
+Następny krok: omówić rzeczywistą historię i planowane sesje z użytkownikiem, oszacować wydatek ponad bazę dnia bez treningu, a potem dopasować posiłki i makroskładniki. Nie edytuj planu na podstawie samych testowych propozycji.
