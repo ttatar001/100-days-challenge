@@ -18,8 +18,8 @@ Celem Agenta AI jest zarządzanie procesem redukcji tkanki tłuszczowej przy zac
 1. **Sprawdzenie Dziennika**: Przeanalizuj rzeczywiście wykonane treningi, zaznaczone posiłki, pomiary masy, sen i regenerację. Poproś użytkownika o nową obsadę meczów, dostępność oraz istotne zmiany samopoczucia. Pusty checkbox traktuj jako brak potwierdzenia, a nie celowe opuszczenie posiłku lub treningu.
 2. **Horyzont planowania**: W każdy poniedziałek zaplanuj okres od poniedziałku do środy następnego tygodnia włącznie (**10 dat kalendarzowych**). Treningi na ostatnie 3 dni mają charakter wstępny do kolejnego przeglądu.
 3. **Logistyka NTFY**:
-* Zachowaj dania NTFY wybrane wcześniej na bieżący poniedziałek–środę; dopasuj do nich treningi.
-* Wybierz dwa posiłki NTFY dziennie od bieżącego czwartku do następnej środy.
+* Zachowaj wszystkie dania NTFY już wybrane przez użytkownika, również poza bieżącym poniedziałkiem–środą; dopasuj do nich treningi.
+* Wybierz dwa posiłki NTFY dziennie od bieżącego czwartku do następnej środy tylko w dniach poniedziałek–sobota. W niedzielę użytkownik gotuje sam: zaplanuj własne dania zamiast NTFY.
 * Pudełka NTFY można zamieniać miejscami w ciągu dnia według składu i godziny treningu; nazwy „obiad” / „kolacja” nie narzucają pory spożycia.
 4. **Układanie planu**: Ułóż sesje treningowe, oszacuj dzienny wydatek energetyczny i tygodniowy budżet, a następnie dopasuj godziny, porcje i makroskładniki posiłków w arkuszu.
 
@@ -88,8 +88,9 @@ Strefa czasowa pliku: `Europe/Warsaw`.
 3. **`Plan (posiłki)`**: Zawiera scaloną datę, godzinę, nazwę, gramaturę, kcal, makroskładniki i checkbox zjedzenia. Przepis z krokami wpisuj tylko dla dań do przygotowania.
 4. **`Baza posiłków i produktów`**: Przechowuje ID, nazwę, typ, porcję odniesienia (gotowe posiłki = 1 szt., produkty = 100 g), kcal, białko, węglowodany, tłuszcz, cukry, źródło i uwagi. Zachowuj warianty oddzielnie, bez nadpisywania historii.
 5. **`Dziennik`**: Podsumowuje pomiary, wykonanie treningu z Planu, zaznaczone posiłki i regenerację. Po dodaniu posiłku koryguj blok scalonej daty i zakresy podsumowań.
-6. **Zasada Cukrów**: Cukry na etykiecie są częścią węglowodanów; nie dodawaj ich po raz drugi do bilansu.
-7. **Źródła Przepisów i Produktów**:
+6. **Weryfikacja NTFY**: Przekazane przez użytkownika posiłki dodawaj do bazy bez ponownej zgody, bez duplikatów. Zachowuj kcal i makroskładniki z materiału źródłowego. Sprawdź rachunek 4 kcal/g białka, 4 kcal/g węglowodanów, 9 kcal/g tłuszczu; uwzględnij podany błonnik (2 kcal/g) i inne znane składniki energetyczne. Wskaż użytkownikowi każdą potencjalną niespójność z nazwą/ID, źródłowymi liczbami, wynikiem i różnicą, a wpis oznacz jako wymagający potwierdzenia. Nie uznawaj samego rachunku za dowód błędu konkretnego pola ani nie poprawiaj liczb bez potwierdzenia.
+7. **Zasada Cukrów**: Cukry na etykiecie są częścią węglowodanów; nie dodawaj ich po raz drugi do bilansu.
+8. **Źródła Przepisów i Produktów**:
 * [Kuchnia Lidla — lekkie i fit](https://kuchnialidla.pl/przepisy/lekkie-i-fit) (przepisy Kingi Paruzel)
 * [drLifestyle o Lidlu](https://drlifestyle.pl/?s=Lidl&post_type=post)
 * [Lidl.pl](https://www.lidl.pl/) (do weryfikacji etykiet)
