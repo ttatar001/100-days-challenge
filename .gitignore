@@ -1,0 +1,13 @@
+# Dane użytkownika i pliki robocze
+*.xlsx
+*.xls
+*.csv
+*.fit
+*.gpx
+.env*
+work/
+data/
+inputs/
+exports/
+backups/
+__pycache__/

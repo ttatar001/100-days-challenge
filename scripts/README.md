@@ -1,17 +1,5 @@
-# Importer Garmina — następne zadanie Codexa
+# Przyszła integracja Garmina
 
-Nie ma jeszcze implementacji ani aktywnego połączenia. Przygotuj prosty skrypt Python korzystający z aktualnej wersji `python-garminconnect`: https://github.com/cyberjunky/python-garminconnect
+Zegarek jest obecnie w reklamacji; integracja nie działa. Po jego powrocie przygotuj prosty, uruchamiany ręcznie importer odczytowy z aktualną wersją [`python-garminconnect`](https://github.com/cyberjunky/python-garminconnect). Przed implementacją sprawdź bieżące API i sposób logowania. Pobieraj aktywności, czas, dystans, dostępne tętno i kalorie, kroki oraz dobowe podsumowania. Dla siłowni nie dopowiadaj nieznanych ćwiczeń i ciężarów. Rozróżniaj kalorie aktywne i całkowite, braki danych i rzeczywiste zera; nie doliczaj ponownie treningu do całkowitego wydatku.
 
-Najpierw sprawdź dokumentację aktualnej wersji, sygnatury metod i obsługę logowania. Nie opieraj kodu na nieaktualnym przykładzie uwierzytelniania. Na start uruchamianie ręczne na lokalnym komputerze jest wystarczające.
-
-Zakres pierwszej wersji:
-
-1. Odczyt ostatnich 14 dni: aktywności, czas, dystans, tętno, kalorie oraz sen i dostępne podsumowania dobowe.
-2. Wyraźne rozróżnienie kalorii aktywnych i całkowitych. Zapisywanie jednostek, dat i źródła.
-3. Brak danych jako brak, z zachowaniem rzeczywistych zer. Nie zakładaj, że każdy model zegarka udostępnia wszystkie metryki.
-4. Zapis danych źródłowych w `data/garmin/` i krótkiego podsumowania w `exports/`. Nie zapisuj tokenów w tych katalogach.
-5. Wyłącznie metody odczytowe. Nie przesyłaj treningów do zegarka, nie zmieniaj aktywności i nie usuwaj danych.
-6. Logowanie w lokalnym terminalu; obsługa wymaganej ponownej autoryzacji. Hasło i tokeny pozostają poza plikami projektu.
-7. Możliwość użycia ręcznego eksportu Garmin Connect przy niedziałającym połączeniu. Po imporcie sprawdź kilka wartości z widokiem Garmin Connect.
-
-Nie dodawaj serwera, orkiestratora ani harmonogramu do pierwszego importera. Cykliczne uruchamianie jest późniejszym, oddzielnym etapem.
+Logowanie i tokeny przechowuj wyłącznie poza repozytorium. Importer nie może zmieniać ani usuwać danych Garmina. Przy pierwszym uruchomieniu porównaj kilka odczytów z Garmin Connect. Ręczny eksport może być wariantem awaryjnym. Nie dodawaj harmonogramu ani serwera do pierwszej wersji.
